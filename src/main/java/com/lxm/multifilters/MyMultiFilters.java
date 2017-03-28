@@ -61,7 +61,7 @@ public class MyMultiFilters implements Filter{
 		list.add(new Filter1());
 		list.add(new Filter2());
 		list.add(new Filter3());
-		return (Filter[]) list.toArray(new Filter[0]);
+		return (Filter[]) list.toArray(new Filter[3]);
 	}
 
 }

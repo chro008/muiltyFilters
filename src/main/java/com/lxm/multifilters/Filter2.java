@@ -13,18 +13,19 @@ public class Filter2 implements Filter{
 
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		System.out.println("filter1 init");
+		System.out.println("filter22 init");
 	}
 
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		System.out.println("filter1 do filter");
+		System.out.println("filter22 do filter");
+		chain.doFilter(request, response);
 	}
 
 	@Override
 	public void destroy() {
-		System.out.println("filter1 destroy");
+		System.out.println("filter22 destroy");
 	}
 
 }

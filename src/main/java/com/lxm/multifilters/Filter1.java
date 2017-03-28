@@ -20,6 +20,7 @@ public class Filter1 implements Filter{
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 		System.out.println("filter11 do filter");
+		chain.doFilter(request, response);
 	}
 
 	@Override
