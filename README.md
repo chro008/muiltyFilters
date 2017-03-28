@@ -1,1 +1,5 @@
 # multiFilters
+
+起因是因为系统中web.xml有多个filter，这些filter是对某个共同的东西进行过滤的
+所以定义了一个总的filter，将其他的filter生成一个数组放到这个总filter中，只需要在web.xml配置总filter即可
+当过滤的时候，总filter会遍历所有的子filter 执行子filter的do filter 方法
